@@ -1,6 +1,7 @@
 # ToyRobot
+I completed the application using Ember.js.  All the required functionality has been implemented as well as a grid visualization.
 
-
+There is a limit of 1 command per line. i.e.) Move Move on the same line wouldn't work.  
 ## Test Data
 `a)
 PLACE 0,0,NORTH
