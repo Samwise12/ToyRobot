@@ -1,0 +1,41 @@
+@import "ember-bootstrap/bootstrap";
+
+html {
+	margin-left: 20%;
+}
+
+.quantize td:after{
+	content: '';
+	display: block;
+	margin-top: 100%;
+}
+.quantize {
+	width: 100%
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: 6%;
+	position: absolute;
+}
+
+.td-1 {
+	display: flex;
+	padding-bottom: 1.6rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.degrees0 {
+	transform: rotate(0deg);
+}
+.degrees90 {
+	transform: rotate(90deg);
+}
+.degrees180 {
+	transform: rotate(180deg);
+}
+.degrees270 {
+	transform: rotate(270deg);
+}

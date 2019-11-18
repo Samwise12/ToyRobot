@@ -1,0 +1,33 @@
+<div class="w-50">
+	<table class="quantize">
+		{{#each this.testGrid as |row|}}
+		<tr>
+			{{#each row as |cell|}}	
+					{{#if (eq cell 1)}}
+						<td class="border border-dark td-1">
+								<img
+									class="{{this.imageClass}}"
+									 src="robot.jpg"
+									 alt="robot"
+									 style="position:absolute"
+									  >	
+						</td>
+						{{else}}
+						<td class="bg-dark border">
+							{{!-- nbsp or string prevents image from changing square size --}}
+							&nbsp;
+						</td>
+					{{/if}}			
+			{{/each}}
+		</tr>
+		{{/each}}
+	</table>	
+	<form {{on "submit" this.command }}>
+		<label for="">Enter Commands:</label>
+		<Textarea class="form-control w-100" rows="5" 
+		placeholder="Enter Command" 
+		@value={{commands}}
+		></Textarea>
+		<button type="submit">SUBMIT</button>
+	</form>
+</div>
